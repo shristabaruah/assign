@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  margin: 1rem;
+}
+.heading {
+  display: flex;
+  margin: 1rem 0;
+  justify-content: space-between;
+
+}
+.search-bar {
+  border: none;
+  background-color: var(--color-white);
+  text-align: center;
+}
+
+.layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
