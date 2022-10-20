@@ -1,0 +1,74 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  height: 52px;
+  align-items: center;
+  padding: 5px;
+  background-color: var(--color-white);
+}
+ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu-items {
+  display: flex;
+  gap: 2rem;
+}
+li,
+.favourite {
+  font-weight: 500;
+  cursor: pointer;
+  padding: 3px 5px;
+  border-radius: 4px;
+}
+.option-menu {
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  min-width: 140px;
+  position: absolute;
+  transition: visibility 0.65s ease-in-out;
+  margin-top: 15px;
+  padding: 9px;
+  border-radius: 4px;
+  text-align: center;
+  z-index: 9;
+}
+.dropdown:hover > .option-menu {
+  visibility: visible;
+}
+li:hover,
+.favourite:hover {
+  background-color: var(--color-bg);
+  color: var(--color-blue);
+}
+.buttons,
+.menu-items,
+ul,
+li,
+h3 {
+  background-color: var(--color-white);
+  cursor: pointer;
+}
+.btn {
+  border: 2px solid var(--color-grey);
+  margin-right: 1rem;
+  padding: 4px 10px;
+  outline: none;
+  border-radius: 5px;
+  background-color: var(--color-white);
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.7;
+  transition: opacity 1s;
+}
+.login {
+  color: var(--color-blue);
+  background-color: var(--color-white);
+}
+.signup {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
